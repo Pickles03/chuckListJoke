@@ -24,8 +24,53 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #dc7f7f;
 }
 
+
+/* <h1>Chuck Norris Jokes</h1>
+  <button id="fetchJoke">Obtener Chiste</button>
+  <div class="container">
+    <ul id="jokeList"></ul>
+  </div>
+  <button id="deleteAll">Delete all</button>
+  */
+
+.container {
+display: flex;
+flex-direction: column;
+width: fit-content;
+gap: 20px; 
+}
+
+#fetchJoke {
+  border-radius: 6px;
+}
+
+#deleteAll {
+  border-radius: 6px;
+}
+
+li button {
+  align-self: flex-start;
+  width: auto;
+  margin-left: 0;
+  border-radius: 6px;
+  background-color: red;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px 5px;
+  list-style: none;
+  gap: 15px;
+  padding: 10px;
+  margin: 10px; /* space between the boxes*/
+  background: linear-gradient(200deg, rgb(216, 216, 212), rgb(188, 216, 220), rgb(132, 168, 203));
+}
 
 
